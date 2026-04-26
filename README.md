@@ -2,7 +2,8 @@
 
 > Implementation of a 16-bit Basic Computer with a Hardwired Control Unit, Data Unit, and I/O Interface using **Logisim Evolution**.
 >
-> **Course:** Computer Architecture and Organization — AIE 172
+> **Course:** Computer Architecture and Organization 
+<img src="Screenshot%202026-04-26%20032536.png" width="1000"/>
 
 ---
 
@@ -55,6 +56,8 @@ This project implements a **Basic Computer** architecture with:
 
 ## 📦 Data Unit
 
+<img src="Screenshot%202026-04-26%20033715.png" width="1000"/>
+
 ### Registers
 
 | Register | Width | Operations | Function |
@@ -84,6 +87,8 @@ S1 = CLR
 S0 = INC AND (NOT CLR)
 WE = LD OR INC OR CLR
 ```
+<img src="Screenshot 2026-04-26 033744.png" width="1000"/>
+
 
 ### IR Register Special Output
 
@@ -105,6 +110,7 @@ IR[10:0]  ──► IR_ADDR (11-bit)  ──► Data Bus (via Buffer, enabled at
 **Flags:**
 - **E Flag** — Carry out from Adder (D Flip-Flop), cleared by CLE instruction
 - **Z Flag** — Zero result detector (16-input OR + NOT), cleared on SC_CLR
+<img src="Screenshot 2026-04-26 033824.png" width="1000"/>
 
 ### Memory
 
@@ -115,10 +121,13 @@ Data In : Data Bus → RAM D pin
 Data Out: RAM Q pin → Data Bus (controlled by OE = MEM_READ)
 Write   : MEM_WRITE → RAM WE pin
 ```
+<img src="Screenshot 2026-04-26 033847.png" width="1000"/>
 
 ---
 
 ## ⚙️ Control Unit
+
+<img src="Screenshot 2026-04-26 033727.png" width="1000"/>
 
 ### Components
 
@@ -187,6 +196,7 @@ SC_CLR       = (D0·T4)+(D1·T3)+(D3·T4)+(D4·T4)+(D5·T3)+(D6·T3)
                +(D7·T5)+(D8·T3)+(D9·T5)+(D10·T3)+(D11·T3)+(D12·T3)
                +(D13·T3)+(D14·T3)+(D15·T3)
 ```
+<img src="Screenshot 2026-04-26 033950.png" width="1000"/>
 
 ---
 
