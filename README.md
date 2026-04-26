@@ -124,6 +124,14 @@ Write   : MEM_WRITE → RAM WE pin
 <img src="Screenshot 2026-04-26 033847.png" width="1000"/>
 
 ---
+### Data Bus
+```
+WIRE : 16 bits
+MUX : 16 bits WITH 3 Select
+INPUTS OF REGISTERS : AR , PC , IR , AC , DR , OUTR
+OUTPUTS OF REGISTERS : AR , PC , IR , AC , DR , INPR
+```
+<img src="Screenshot 2026-04-26 033834.png" width="1000"/>
 
 ## ⚙️ Control Unit
 
